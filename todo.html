@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Todo App</title>
+
+    <style>
+      body {
+        background: #111;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 3rem;
+      }
+
+      .box {
+        width: 20rem;
+        background: #222;
+        color: skyblue;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .box:hover {
+        outline: 2px solid skyblue;
+      }
+
+      /* h2 {
+        text-align: center;
+      } */
+
+      .input {
+        display: flex;
+        gap: 10px;
+      }
+
+      input {
+        outline: none;
+        border: 1px solid skyblue;
+        background: #222;
+        color: silver;
+        padding: 5px 10px;
+        font-size: 1.1rem;
+        border-radius: 5px;
+      }
+      input:focus {
+        outline: 2px solid skyblue;
+        background: #111;
+      }
+      button {
+        padding: 3px 10px;
+        border: none;
+        background: dodgerblue;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        background: green;
+      }
+
+      ul {
+        text-decoration: none;
+        padding: 0;
+      }
+
+      li {
+        margin: 5px 0px;
+        padding: 3px 3px 3px 10px;
+        background: dodgerblue;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        font-size: 1.1rem;
+      }
+
+      .btn2 {
+        padding: 5px 10px;
+        background: red;
+      }
+
+      .btn2:hover {
+        background: darkred;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <div style="width: 100%">
+        <h2>Todo App</h2>
+      </div>
+      <div class="input">
+        <input
+          type="text"
+          id="input"
+          placeholder="Enter a task"
+          style="width: 100%"
+        />
+        <button id="btn1">Add</button>
+      </div>
+
+      <ul id="list"></ul>
+    </div>
+
+    <script>
+      const btn = document.getElementById("btn1");
+      // OR
+      const btn1 = document.querySelector("#btn1");
+      btn1.addEventListener("click", addTask);
+      function addTask() {
+        const input = document.querySelector("input");
+        const task = input.value.trim();
+
+        if (task === "") {
+          alert("Please enter a task");
+          return;
+        }
+
+        const li = document.createElement("li");
+
+        li.innerHTML = `
+                <span>${task}</span>
+                <button class="btn2" onclick="deleteTask(this)">
+                    Delete
+                </button>
+            `;
+
+        document.getElementById("list").appendChild(li);
+        input.value = "";
+      }
+
+      function deleteTask(button) {
+        button.parentElement.remove();
+      }
+    </script>
+  </body>
+</html>

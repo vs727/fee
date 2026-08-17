@@ -1,0 +1,24 @@
+.dark {
+  background-color: #111;
+  color: white;
+}
+input {
+  border: 1px solid skyblue;
+}
+input:focus {
+  border: none;
+  outline: 2px solid skyblue;
+  /* border: 2px solid skyblue; */
+}
+button {
+  padding: 0.15rem 0.5rem;
+}
+a {
+  color: gray;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+a:hover {
+  background: lightgray;
+  color: black;
+}

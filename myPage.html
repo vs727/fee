@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Vikash Srivastava" />
+    <title>VS</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <style></style>
+  <body>
+    <header class="fcx">
+      <div>Logo</div>
+      <div class="fcx" style="border-radius: 20px; height: 2rem">
+        <input
+          type="text"
+          placeholder="Search"
+          style="border-radius: 20px; height: 1.8rem; padding: 3px 10px"
+        />
+
+        <button
+          id="btn1"
+          style="
+            border: 1px solid gray;
+            width: 3rem;
+            border-radius: 20px;
+            height: 1.5rem;
+
+            margin-left: -3.65rem;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+          "
+        >
+          Click
+        </button>
+      </div>
+
+      <div class="fcx" style="padding: 0">
+        <a href="">Link1</a>
+        <a href="">Link2</a>
+      </div>
+    </header>
+
+    <main></main>
+    <footer class="fcx">
+      <span><button>btn</button></span>
+      <span> Section_ID_Name </span>
+      <span><button id="theme">Theme</button></span>
+    </footer>
+
+    <script type="text/javascript">
+      const btn1 = document.querySelector("#theme");
+      btn1.addEventListener("click", cbf);
+      function cbf() {
+        document.body.classList.toggle("dark");
+      }
+    </script>
+  </body>
+</html>
