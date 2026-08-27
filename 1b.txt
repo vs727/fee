@@ -15,3 +15,5 @@ u can replace the content of  App.jsx file with your own code which will be disp
 dont forget to save your files. 
 React is for HMR ie hot module relacement ie updates UI if u edit and save your jsx file
 you may have to refresh your browser so that new content may reflect.
+
+for closing your server,  click on terminal where your server is running and press ( ctrl c ) keys together.
