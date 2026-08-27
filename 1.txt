@@ -1,5 +1,5 @@
 27/08/2026
 I have uploaded a file named index.css
-This is for applying css in your react jsx files
+This is for applying css in your react components ie .jsx files
 Please locate index.css file which is available under src folder of your react project folder.
 please replace your src\index.css with my index.css file.
