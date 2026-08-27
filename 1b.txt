@@ -1,0 +1,16 @@
+Today what we discussed and demonstrated
+go to terminal
+create one folder with name mylab
+go to mylab folder
+    npm create vite@latest 
+
+    create your lab with proper response
+you will get a server running with a demo application
+let it remain running
+the sequence of file executions is : first index.html runs which in turn calls main.jsx through script tag in index.html file.
+then main.jsx file imports required modules and your component file like App.jsx
+what u can see in your browser is the content of App.jsx file
+u can replace the content of  App.jsx file with your own code which will be displayed in the browser
+dont forget to save your files. 
+React is for HMR ie hot module relacement ie updates UI if u edit and save your jsx file
+you may have to refresh your browser so that new content may reflect.
