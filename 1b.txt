@@ -5,6 +5,7 @@ go to mylab folder
     npm create vite@latest 
 
     create your lab with proper response
+    give . as name of project so that mylab becomes name of the project.
 you will get a server running with a demo application
 let it remain running
 the sequence of file executions is : first index.html runs which in turn calls main.jsx through script tag in index.html file.
