@@ -66,6 +66,10 @@ body {
   background-color: white;
   color: black;
 }
+.bg11 {
+  background-color: hsl(0, 70%, 50%);
+  color: white;
+}
 
 .bg20 {
   background-color: black;
