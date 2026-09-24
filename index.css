@@ -62,32 +62,38 @@ body {
   background-color: transparent;
 }
 
-.bg1 {
+.bg10 {
   background-color: white;
   color: black;
 }
 
-.bg2 {
+.bg20 {
   background-color: black;
   color: skyblue;
 }
 
-.bg3 {
+.bg30 {
   background-color: darkred;
   color: #f1f1f1;
 }
-.bg4 {
+.bg40 {
   background-color: seagreen;
   color: #f1f1f1;
 }
-.bg5 {
+
+.bg50 {
   background-color: hsl(215, 100%, 50%);
   color: #f1f1f1;
 }
 .bg51 {
-  background-color: hsl(215, 100%, 40%);
+  background-color: hsl(215, 100%, 30%);
   color: #f1f1f1;
 }
+.bg52 {
+  background-color: hsl(215, 100%, 10%);
+  color: #f1f1f1;
+}
+
 .fx {
   display: flex;
   gap: 0.5rem;
