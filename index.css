@@ -84,7 +84,10 @@ body {
   background-color: hsl(215, 100%, 50%);
   color: #f1f1f1;
 }
-
+.bg51 {
+  background-color: hsl(215, 100%, 40%);
+  color: #f1f1f1;
+}
 .fx {
   display: flex;
   gap: 0.5rem;
@@ -254,6 +257,15 @@ textarea {
 }
 .mb3 {
   margin-bottom: 1.5rem;
+}
+.fss {
+  font-size: 1rem;
+}
+.fsm {
+  font-size: 1.25rem;
+}
+.fsl {
+  font-size: 1.5rem;
 }
 .fs1 {
   font-size: 1.1rem;
