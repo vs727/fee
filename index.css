@@ -415,6 +415,9 @@ textarea {
 .h100 {
   min-height: 100dvh;
 }
+.h50 {
+  min-height: 50%;
+}
 .h95 {
   height: calc(100dvh - 5rem);
 }
@@ -463,6 +466,12 @@ textarea {
 }
 
 /* box height */
+.bh1 {
+  height: 1rem;
+}
+.bh2 {
+  height: 2rem;
+}
 .bh3 {
   height: 3rem;
 }
@@ -477,6 +486,15 @@ textarea {
 }
 .bh20 {
   height: 20rem;
+}
+.bh25 {
+  height: 25rem;
+}
+
+.bgi {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 768px) {
