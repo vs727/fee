@@ -39,15 +39,38 @@ body {
   border-radius: 8px;
 }
 
-.ns {
-  flex-shrink: 0;
-}
-
 .b1 {
   border: 1px solid skyblue;
 }
 .b2 {
   border: 2px solid skyblue;
+}
+.br1 {
+  border-radius: 0.25rem;
+}
+.br2 {
+  border-radius: 0.5rem;
+}
+.br3 {
+  border-radius: 1rem;
+}
+
+.c1 {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c2 {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .p1 {
@@ -59,18 +82,88 @@ body {
 .p3 {
   padding: 1.5rem;
 }
-.px {
-  padding: 0 5px;
+.p4 {
+  padding: 2rem;
 }
+.p5 {
+  padding: 2.5rem;
+}
+
 .px1 {
-  padding: 0 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .px2 {
-  padding: 0 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-.py {
-  padding: 5px 0;
+
+.py1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
+.py2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.mt1 {
+  margin-top: 0.5rem;
+}
+.mt2 {
+  margin-top: 1rem;
+}
+.mt3 {
+  margin-top: 1.5rem;
+}
+.mb1 {
+  margin-bottom: 0.5rem;
+}
+.mb2 {
+  margin-bottom: 1rem;
+}
+.mb3 {
+  margin-bottom: 1.5rem;
+}
+
+.mr1 {
+  margin-right: 0.5rem;
+}
+.mr2 {
+  margin-right: 1rem;
+}
+.mr3 {
+  margin-right: 1.5rem;
+}
+.ml1 {
+  margin-left: 0.25rem;
+}
+.ml2 {
+  margin-left: 0.5rem;
+}
+.ml3 {
+  margin-left: 1rem;
+}
+
+.fss {
+  font-size: 0.9rem;
+}
+.fsm {
+  font-size: 1.15rem;
+}
+.fsl {
+  font-size: 1.35rem;
+}
+.clr1 {
+  color: yellow;
+}
+.clr2 {
+  color: skyblue;
+}
+.clr3 {
+  color: lightgreen;
+}
+
 .bgr {
   background: radial-gradient(
     circle at center,
@@ -101,12 +194,24 @@ body {
   color: black;
 }
 .bg11 {
-  background-color: hsl(0, 70%, 50%);
-  color: white;
+  background-color: hsl(240, 0%, 70%);
+  color: black;
+}
+.bg12 {
+  background-color: hsl(240, 0%, 50%);
+  color: black;
 }
 
 .bg20 {
   background-color: hsl(0, 0%, 0%);
+  color: skyblue;
+}
+.bg21 {
+  background-color: hsl(0, 0%, 5%);
+  color: skyblue;
+}
+.bg22 {
+  background-color: hsl(0, 0%, 10%);
   color: skyblue;
 }
 
@@ -124,15 +229,15 @@ body {
 }
 
 .bg40 {
-  background-color: hsl(146, 50%, 36%);
+  background-color: hsl(145, 50%, 35%);
   color: #f1f1f1;
 }
 .bg41 {
-  background-color: hsl(146, 50%, 26%);
+  background-color: hsl(145, 50%, 25%);
   color: #f1f1f1;
 }
 .bg42 {
-  background-color: hsl(146, 50%, 16%);
+  background-color: hsl(145, 50%, 15%);
   color: #f1f1f1;
 }
 
@@ -141,24 +246,24 @@ body {
   color: #f1f1f1;
 }
 .bg51 {
-  background-color: hsl(215, 100%, 30%);
+  background-color: hsl(215, 100%, 35%);
   color: #f1f1f1;
 }
 .bg52 {
-  background-color: hsl(215, 100%, 10%);
+  background-color: hsl(215, 100%, 20%);
   color: #f1f1f1;
 }
 
 .bg70 {
-  background-color: hsl(270, 20%, 15%);
+  background-color: hsl(270, 20%, 20%);
   color: #f1f1f1;
 }
 .bg71 {
-  background-color: hsl(270, 20%, 10%);
+  background-color: hsl(270, 20%, 15%);
   color: #f1f1f1;
 }
 .bg72 {
-  background-color: hsl(270, 20%, 5%);
+  background-color: hsl(270, 20%, 10%);
   color: #f1f1f1;
 }
 
@@ -171,6 +276,7 @@ body {
   display: flex;
   gap: 0.5rem;
 }
+
 .fxc {
   display: flex;
   gap: 0.5rem;
@@ -199,37 +305,52 @@ body {
 .jse {
   justify-content: space-evenly;
 }
+
+/* container attribute */
 .fwrap {
   flex-wrap: wrap;
 }
 
+/* box attributes */
+.ns {
+  flex-shrink: 0;
+}
 .card1 {
-  height: 6rem;
-  width: 12rem;
+  height: 10rem;
+  width: 20rem;
   border: 1px solid;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .card2 {
-  height: 9rem;
-  width: 18rem;
+  height: 12rem;
+  width: 22rem;
   border: 1px solid;
   border-radius: 8px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .card3 {
-  height: 12rem;
-  width: 12rem;
+  height: 18rem;
+  width: 14rem;
+  border: 1px solid;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.card4 {
+  height: 20rem;
+  width: 16rem;
   border: 1px solid;
   border-radius: 8px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 button {
-  padding: 5px 5px;
+  padding: 5px 10px;
   cursor: pointer;
   border-radius: 5px;
   font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
   border: none;
   width: fit-content;
   /* background-color: hsl(215, 100%, 50%);
@@ -237,23 +358,26 @@ button {
 }
 
 .btn1 {
-  padding: 5px;
+  padding: 3px 5px;
+  font-size: 0.75rem;
 }
 
 .btn2 {
-  padding: 5px 15px;
+  padding: 8px 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
   /* outline: none; */
 }
 
 .btn3 {
-  height: 25px;
-  width: 25px;
+  height: 24px;
+  width: 24px;
   border-radius: 50%;
 }
 
 .btn4 {
-  height: 35px;
-  width: 35px;
+  height: 32px;
+  width: 32px;
   border-radius: 50%;
 }
 
@@ -266,6 +390,7 @@ button:active {
 }
 
 span {
+  width: 100px;
   display: inline-block;
   text-align: left;
 }
@@ -289,15 +414,17 @@ span {
   width: 5rem;
   text-align: center;
 }
-.s10 {
+.sp10 {
   width: 100px;
 }
-.s15 {
+.sp15 {
   width: 150px;
 }
 
 select {
   font-family: inherit;
+  height: 32px;
+  padding: 3px 10px;
 }
 
 .sh1 {
@@ -324,12 +451,13 @@ a.active {
 }
 input {
   font-family: inherit;
-  background-color: #f1f1f1;
+  background-color: #f5f5f5;
   width: 100%;
   height: 32px;
   padding: 3px 10px;
   outline: none;
   border: none;
+  border-radius: 5px;
 }
 
 textarea {
@@ -343,33 +471,7 @@ textarea {
   outline: none;
   border: none;
 }
-.mt1 {
-  margin-top: 0.5rem;
-}
-.mt2 {
-  margin-top: 1rem;
-}
-.mt3 {
-  margin-top: 1.5rem;
-}
-.mb1 {
-  margin-bottom: 0.5rem;
-}
-.mb2 {
-  margin-bottom: 1rem;
-}
-.mb3 {
-  margin-bottom: 1.5rem;
-}
-.fss {
-  font-size: 1rem;
-}
-.fsm {
-  font-size: 1.25rem;
-}
-.fsl {
-  font-size: 1.5rem;
-}
+
 .fs1 {
   font-size: 1.1rem;
 }
@@ -412,17 +514,17 @@ textarea {
   gap: 0.5rem;
 }
 
+.hf {
+  min-height: 100dvh;
+}
 .h100 {
   min-height: 100dvh;
 }
+.h95 {
+  min-height: calc(100dvh - 5rem);
+}
 .h50 {
   min-height: 50%;
-}
-.h95 {
-  height: calc(100dvh - 5rem);
-}
-.hf {
-  min-height: 100dvh;
 }
 
 /* width percentage */
@@ -440,6 +542,7 @@ textarea {
 }
 
 /* fixed width */
+
 .w5 {
   width: 5rem;
 }
@@ -475,6 +578,9 @@ textarea {
 .bh3 {
   height: 3rem;
 }
+.bh4 {
+  height: 4rem;
+}
 .bh5 {
   height: 5rem;
 }
@@ -495,6 +601,22 @@ textarea {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 32px;
+  height: 32px;
+  padding: 9px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px;
+  font-weight: 900;
 }
 
 @media screen and (min-width: 768px) {
